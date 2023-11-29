@@ -1,0 +1,18 @@
+graph2={'Rektor' : {'Warek1', 'Warek2'},
+       'Warek1' : {'Rektor'},
+       'Warek2' : {'Rektor','Kaprodi1', 'Kaprodi2','Kaprodi3'},
+       'Kaprodi1' : {'Warek2','Dosen A','Dosen B','Dosen C'},
+       'Dosen A' : {'Kaprodi1'},
+       'Dosen B' : {'Kaprodi1'},
+       'Dosen C' : {'Kaprodi1'},
+       'Kaprodi2' : {'Warek2','Dosen D','Dosen E'},
+       'Dosen D' : {'Kaprodi2'},
+       'Dosen E' : {'Kaprodi2'},
+       'Kaprodi3' : {'Warek2','Dosen F','Dosen G'},
+       'Dosen F': {'Kaprodi3'},
+       'Dosen G' : {'Kaprodi3'}}
+
+bfs(graph2, 'Rektor')
+
+visited = set()
+bfs(graph2, 'Rektor')
