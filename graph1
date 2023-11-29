@@ -1,0 +1,11 @@
+graph1={'Amin' : {'Wasim', 'Nick', 'Mike'},
+       'Wasim' : {'Imran', 'Amin'},
+       'Imran' : {'Wasim','Faras'},
+       'Faras' : {'Imran'},
+       'Mike' : {'Amin'},
+       'Nick' : {'Amin'}}
+
+bfs(graph1, 'Amin')
+
+visited = set()
+dfs(visited, graph1, 'Amin')
